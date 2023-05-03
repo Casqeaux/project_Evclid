@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="./js/tabs.js"></script>
   <title>Евклид - проектные решения</title>
 </head>
 
@@ -17,7 +18,7 @@
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
-    </button>
+      </button>
       <a href="#" class="header__logo">
         <img src="./img/Logo.svg" alt="Логотип">
       </a>
@@ -146,28 +147,28 @@
       </h2>
       <ul class="how-work__list">
         <li class="how-work__item">
-          <button class="btn how-work__btn active">
+          <button class="btn how-work__btn tab-btn-active" data-default="one" data-path="one">
             1 шаг
           </button>
         </li>
         <li class="how-work__item">
-          <button class="btn how-work__btn">
+          <button class="btn how-work__btn" data-default="two" data-path="two">
             2 шаг
           </button>
         </li>
         <li class="how-work__item">
-          <button class="btn how-work__btn">
+          <button class="btn how-work__btn" data-default="three" data-path="three">
             3 шаг
           </button>
         </li>
         <li class="how-work__item">
-          <button class="btn how-work__btn">
+          <button class="btn how-work__btn" data-default="four" data-path="four">
             4 шаг
           </button>
         </li>
       </ul>
 
-      <div class="how-work__content-wrap">
+      <div class="how-work__content-wrap tab-active" data-target="one">
         <div class="how-work__content-left">
           <div class="how-work__content-left-heading">
             Проводим консультацию
@@ -195,6 +196,90 @@
           <img class="how-work__content-right-pic" src="./img/work_pic_1.jpg" alt="Слайд 1">
         </div>
       </div>
+
+
+      <div class="how-work__content-wrap" data-target="two">
+        <div class="how-work__content-left">
+          <div class="how-work__content-left-heading">
+            Составляем смету
+          </div>
+          <div class="how-work__content-left-text">
+            Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов,
+            некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также
+            представители современных социальных резервов, инициированные исключительно синтетически, ограничены
+            исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных
+            источников, современные исследования подвергнуты целой серии независимых исследований.
+          </div>
+          <div class="how-work__content-left-btn-wrap">
+            <div class="how-work__content-left-btn-1">
+              Подробнее
+            </div>
+            <div class="how-work__content-left-btn-2">
+              Договор
+            </div>
+
+          </div>
+        </div>
+        <div class="how-work__content-right">
+          <img class="how-work__content-right-pic" src="./img/work_pic_2.jpg" alt="Слайд 2">
+        </div>
+      </div>
+
+      <div class="how-work__content-wrap" data-target="three">
+        <div class="how-work__content-left">
+          <div class="how-work__content-left-heading">
+            Привлекаем подрядчиков
+          </div>
+          <div class="how-work__content-left-text">
+            Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа
+            прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является
+            четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от
+            дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной
+            деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности,
+            постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания
+            по разработке прогресса профессионального сообщества.
+          </div>
+          <div class="how-work__content-left-btn-wrap">
+            <div class="how-work__content-left-btn-1">
+              Подробнее
+            </div>
+            <div class="how-work__content-left-btn-2">
+              Договор
+            </div>
+
+          </div>
+        </div>
+        <div class="how-work__content-right">
+          <img class="how-work__content-right-pic" src="./img/work_pic_3.jpg" alt="Слайд 3">
+        </div>
+      </div>
+
+      <div class="how-work__content-wrap" data-target="four">
+        <div class="how-work__content-left">
+          <div class="how-work__content-left-heading">
+            Инспектируем все этапы работ
+          </div>
+          <div class="how-work__content-left-text">
+            Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
+            высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития.
+            Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о
+            возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное
+            информационно-пропагандистское обеспечение нашей деятельности позволяет. </div>
+          <div class="how-work__content-left-btn-wrap">
+            <div class="how-work__content-left-btn-1">
+              Подробнее
+            </div>
+            <div class="how-work__content-left-btn-2">
+              Договор
+            </div>
+
+          </div>
+        </div>
+        <div class="how-work__content-right">
+          <img class="how-work__content-right-pic" src="./img/work_pic_4.jpg" alt="Слайд 4">
+        </div>
+      </div>
+
     </div>
   </section>
 
